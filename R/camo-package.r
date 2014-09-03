@@ -66,6 +66,8 @@ find_package <- function(package, version) {
     NA_NULL()
 }
 
+#' @export
+
 package_versions <- function(package) {
 
   dirs <- .libPaths() %>%
