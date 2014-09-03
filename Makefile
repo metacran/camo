@@ -1,6 +1,8 @@
 
-all: README.md
+all: $(patsubst %.Rmd, %.md, $(wildcard vignettes/*.Rmd))
 
-README.md: README.Rmd
-	Rscript -e "library(methods); library(knitr); knit('README.Rmd', quiet = TRUE)" || \
+%.md: %.Rmd
+	cd $(@D) && \
+	Rscript -e "library(methods); library(knitr); knit('$(<F)', quiet = TRUE)" || \
 	rm "$@"
+
