@@ -8,3 +8,7 @@ License: MIT + file LICENSE
 LazyData: true
 URL: https://github.com/metacran/camo
 BugReports: https://github.com/metacran/camo/issues
+Imports:
+    falsy,
+    magrittr,
+    assertthat
