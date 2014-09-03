@@ -1,7 +1,9 @@
 
 
 
-# camo
+# Loading two versions for the same package
+
+## Introduction
 
 Proof of concept, to load multiple versions of the same R package at once.
 
@@ -29,14 +31,14 @@ install.packages("DBI", type = "source")
 ```
 
 ```
-## Installing package into '/private/var/folders/ws/7rmdm_cn2pd8l1c3lqyycv0c0000gn/T/RtmpEGYT5G/file93e144282d3c'
+## Installing package into '/private/var/folders/ws/7rmdm_cn2pd8l1c3lqyycv0c0000gn/T/Rtmp8w93BU/file9b6cf1f78e5'
 ## (as 'lib' is unspecified)
 ```
 
 ```
 ## 
 ## The downloaded source packages are in
-## 	'/private/var/folders/ws/7rmdm_cn2pd8l1c3lqyycv0c0000gn/T/RtmpEGYT5G/downloaded_packages'
+## 	'/private/var/folders/ws/7rmdm_cn2pd8l1c3lqyycv0c0000gn/T/Rtmp8w93BU/downloaded_packages'
 ```
 
 Install the second version into `tmp2`.
@@ -49,7 +51,7 @@ install.packages("http://cran.rstudio.com/src/contrib/Archive/DBI/DBI_0.2-7.tar.
 ```
 
 ```
-## Installing package into '/private/var/folders/ws/7rmdm_cn2pd8l1c3lqyycv0c0000gn/T/RtmpEGYT5G/file93e129b1e119'
+## Installing package into '/private/var/folders/ws/7rmdm_cn2pd8l1c3lqyycv0c0000gn/T/Rtmp8w93BU/file9b6c5b3a0a24'
 ## (as 'lib' is unspecified)
 ```
 
@@ -64,8 +66,8 @@ package_versions("DBI")
 
 ```
 ##                                                                                    dir
-## 1 /private/var/folders/ws/7rmdm_cn2pd8l1c3lqyycv0c0000gn/T/RtmpEGYT5G/file93e144282d3c
-## 2 /private/var/folders/ws/7rmdm_cn2pd8l1c3lqyycv0c0000gn/T/RtmpEGYT5G/file93e129b1e119
+## 1  /private/var/folders/ws/7rmdm_cn2pd8l1c3lqyycv0c0000gn/T/Rtmp8w93BU/file9b6cf1f78e5
+## 2 /private/var/folders/ws/7rmdm_cn2pd8l1c3lqyycv0c0000gn/T/Rtmp8w93BU/file9b6c5b3a0a24
 ## 3                       /Library/Frameworks/R.framework/Versions/3.1/Resources/library
 ##   version
 ## 1   0.3.0

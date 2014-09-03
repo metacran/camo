@@ -8,7 +8,9 @@ knitr::opts_chunk$set(
   fig.height = 8)
 ```
 
-# camo
+# Loading two versions for the same package
+
+## Introduction
 
 Proof of concept, to load multiple versions of the same R package at once.
 
