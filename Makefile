@@ -1,5 +1,5 @@
 
-all: $(patsubst %.Rmd, %.md, $(wildcard vignettes/*.Rmd))
+all: README.md $(patsubst %.Rmd, %.md, $(wildcard vignettes/*.Rmd))
 
 %.md: %.Rmd
 	cd $(@D) && \
