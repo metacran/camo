@@ -1,0 +1,4 @@
+
+jekyll <- function() {
+  hyde::version()
+}

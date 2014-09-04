@@ -1,0 +1,5 @@
+
+doctor <- function() {
+  hyde::version()
+}
+

@@ -1,0 +1,8 @@
+Package: jekyll
+Title: Test package for camo
+Version: 1.0.0
+Authors@R: "Gabor Csardi <csardi.gabor@gmail.com> [aut, cre]"
+Description: Test package for camo.
+License: MIT + file LICENSE
+LazyData: true
+Dependencies: hyde (1.0.0)
